@@ -674,3 +674,8 @@ main.container,
   position: relative;
   z-index: 1;
 }
+#visit-counter {
+  font-weight: bold;
+  color: #4F8FC0;
+  font-size: 1.1rem;
+}
