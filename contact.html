@@ -54,3 +54,10 @@ form {
   </section>
 </body>
 </html>
+<script>
+  fetch('https://api.countapi.xyz/hit/muratkaynar.github.io/visits')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('visit-counter').innerText = data.value;
+  });
+</script>
