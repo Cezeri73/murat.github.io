@@ -1,10 +1,12 @@
+<!-- myworld.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MyWorld</title>
+  <title>My World | Murat</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <header>
@@ -12,7 +14,7 @@
       <h1>Murat Kaynar -Computer Engineering Student</h1>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="myworld.html">MyWorld</a></li>
@@ -20,40 +22,148 @@
       </ul>
     </nav>
   </header>
-
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/vecteezy_technology-hud-background_4822731.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="overlay"></div>
   <main class="container">
-    <section class="myworld-section">
-      <h2>My World</h2>
-      <div class="myworld-grid">
-        <div class="myworld-card">
-          <div class="myworld-content">
-            <h3>🌍 Travel</h3>
-            <p>I love exploring places like Şırnak, Van, and the Aegean coast. Nature and culture always inspire me.</p>
-          </div>
-        </div>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="travel">Travel</button>
+      <button class="tab-btn" data-tab="music">Music</button>
+      <button class="tab-btn" data-tab="books">Books</button>
+      <button class="tab-btn" data-tab="quotes">Quotes</button>
+    </div>
 
-        <div class="myworld-card">
-          <div class="myworld-content">
-            <h3>🎵 Music</h3>
-            <p>I enjoy instrumental music and Turkish rock. Attending concerts and discovering new sounds is part of my routine.</p>
-          </div>
-        </div>
+    <div id="travel" class="tab-content active">
+  <div class="media-card">
+    <img src="images/travel/sirnak1.jpg" alt="Şırnak Manzarası">
+    <p>Şırnak - Farklı doğa ve kültür manzaralarıyla dolu.</p>
+  </div>
+  <div class="media-card">
+    <img src="https://scontent.fesb6-1.fna.fbcdn.net/v/t39.30808-6/462767654_10212829057078691_412132736863637034_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=7uotKqynbGoQ7kNvwHKxO2M&_nc_oc=AdkDzvuBD6-Vw_8ma13x1YzV8o90ujCejN2UO2CrzurLyOE1aGWS2yFXSACtzf5gx8I&_nc_zt=23&_nc_ht=scontent.fesb6-1.fna&_nc_gid=r8eALDEFQxKV3FVdjLWtkA&oh=00_AfF_BE3HQNXsrWNqqiIAbw2DETE1k-4NgA672f1HQHaIJw&oe=680EB4B1" alt="Van Gölü">
+    <p>Van - Sessizliğiyle huzur veren Van Gölü kıyıları.</p>
+  </div>
+  <div class="media-card">
+    <img src="https://scontent.fesb6-1.fna.fbcdn.net/v/t1.6435-9/37918109_10205078857128536_3494527808846168064_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=s52B6fB3hOYQ7kNvwHMDILA&_nc_oc=AdkBtBrve7ji94GYmVODimzb2vuW8mxMESbdI6Ne4rd8DOJL0XVCThu8I6DtT8t6ZW0&_nc_zt=23&_nc_ht=scontent.fesb6-1.fna&_nc_gid=yFGc45mJ4_l6TYCn724dOQ&oh=00_AfGAPNgyUHQgGR7k3iKRox9luE9Jz83GWxK5RqzjVT7-XA&oe=68302BC1" alt="Karadeniz-Amasra Kıyıları">
+    <p>Ege - Mavi ve yeşilin birleştiği sahiller.</p>
+  </div>
+  <div class="media-card">
+    <img src=https://scontent.fesb6-1.fna.fbcdn.net/v/t39.30808-6/462606512_10212811968291482_3355939128099520886_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=OOqRGzSRtHsQ7kNvwET8h7w&_nc_oc=Adkw1nV4Zs-PWY-pD71opBxLDs0lVTYnGuhTjPO037AtoKJkotVCUkbjp7Hm987ZGXw&_nc_zt=23&_nc_ht=scontent.fesb6-1.fna&_nc_gid=PpbDixkT5d0S-HB5gvaW9g&oh=00_AfHX-_lSFnXaXbJ6KlJ-rq44RWeR-Lpdo-PCbGOU3lxneQ&oe=680E9338 alt="Karadeniz-Amasra Kıyıları">
+    <p>Diyarbakır-Surlar</p>
+  </div>
+  <div class="media-card">
+    <img src=https://scontent.fesb6-1.fna.fbcdn.net/v/t1.6435-9/61921508_10206174929889670_8387496273485234176_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qjGtsEpuUAsQ7kNvwGteBdf&_nc_oc=Adk_M9FjtBv7KJrLYDmR7sOFSN8rgqoItg35dNeKzV25oaYrSSAJn1NpKRGROXAyLWI&_nc_zt=23&_nc_ht=scontent.fesb6-1.fna&_nc_gid=7vCmS1C_8uPOyBvVvWt_rw&oh=00_AfEdLHt6zHaJJCJtTgophwll1F_kKkcH2BS70NMy-Jpq4Q&oe=683045D5 alt="Karadeniz-Amasra Kıyıları">
+    <p>Kastamonu-Gençlik Programı</p>
+  </div>
+  <div class="media-card">
+    <img src=https://scontent.fesb6-1.fna.fbcdn.net/v/t1.6435-9/69769042_10206505436712134_1363472964804149248_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=dbMR7yuJeMcQ7kNvwErAZnH&_nc_oc=AdkTnKljK6Z0A8KlVlxrWHLpuiYbJcTNjxzco_fqW1-SXch5isdZK5rJ76uabgWwfvc&_nc_zt=23&_nc_ht=scontent.fesb6-1.fna&_nc_gid=p8fLi4HbELm06toVAMPgmg&oh=00_AfEunqN2pX0X-YwR6YFK7nlnDYR0Otev3C_r452IxVxZdg&oe=6830284D alt="Karadeniz-Amasra Kıyıları">
+    <p>Ankara-Ankapark</p>
+  </div>
+  <div class="media-card">
+    
+    <img src=https://scontent.fesb6-1.fna.fbcdn.net/v/t39.30808-6/465218751_10213038778281590_2944451032624296596_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=GLJwZjYrwDYQ7kNvwE-rlAK&_nc_oc=AdlalYhhJUME1gMeRhFNK1CMI63onrQp3Azyfpw9yandh6eHT7vRPL7x1XV94gvqY_U&_nc_zt=23&_nc_ht=scontent.fesb6-1.fna&_nc_gid=Ws1GBlxIy8tpPy_5053nSA&oh=00_AfGzgS2XmDICEDtKW2iHZNLkTnNvs880Tt65DH4EB5q-iQ&oe=680EB0F2 alt="Karadeniz-Amasra Kıyıları">
+    <p>Ankara-Ankapark</p>
+  </div>
+  <div class="media-card">
+    <img src=https://scontent.fesb6-1.fna.fbcdn.net/v/t39.30808-6/465031893_10213016164756266_3059358613140243533_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=oCDiZsRwHtAQ7kNvwEben5Y&_nc_oc=AdkHc5AXd94tqXW7Gl1bhIo5FlwVrX0u1Dvz1Wge-PX9nCxKdyyfdIZkw440lxY1FRo&_nc_zt=23&_nc_ht=scontent.fesb6-1.fna&_nc_gid=BppsftAR82YqWZeXgPwo4w&oh=00_AfEUj4h8jbIXGl9oETU11sW3LNrM_JvqspySd0Y9i2ox7g&oe=680E9A4D alt="Şırnak Manzarası">
+    <p>Şırnak - Farklı doğa ve kültür manzaralarıyla dolu.</p>
+  </div>
+  
+</div>
 
-        <div class="myworld-card">
-          <div class="myworld-content">
-            <h3>📚 Books</h3>
-            <p>Some of my favorite books are *Simyacı*, *Kürk Mantolu Madonna*, and *1984*. I love stories that make me think.</p>
-          </div>
-        </div>
+    </div>
 
-        <div class="myworld-card">
-          <div class="myworld-content">
-            <h3>📝 Notes & Quotes</h3>
-            <p>“Design is not just what it looks like. Design is how it works.” — Steve Jobs</p>
-          </div>
-        </div>
+    <div id="music" class="tab-content">
+  <div class="media-card">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/AW_JrE9u_3E" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    <p>Turkish rock session highlight from YouTube Shorts.</p>
+    <p>Instrumental in nature.</p>
+  </div>
+  <div class="media-card">
+    <div class="media-card">
+      <iframe 
+        width="100%" 
+        height="315" 
+        src="https://www.youtube.com/embed/5EdyCZWy63A" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <p>Relaxing live music session I enjoyed recently.</p>
+    </div>
+  
+  </div>
+</div>
+    </div>
+
+    <div id="books" class="tab-content">
+  <div class="media-card">
+    <img src="images/books/simyaci.jpg" alt="Simyacı">
+    <p><strong>Simyacı</strong><br>Paulo Coelho – Hayallerin peşinden gitmeyi öğreten sembolik bir roman.</p>
+  </div>
+  <div class="media-card">
+    <img src="images/books/kurk_mantolu_madonna.jpg" alt="Kürk Mantolu Madonna">
+    <p><strong>Kürk Mantolu Madonna</strong><br>Sabahattin Ali – Duygusal derinliği ve karakter çözümlemeleriyle etkileyici.</p>
+  </div>
+  <div class="media-card">
+    <img src="images/books/1984.jpg" alt="1984">
+    <p><strong>1984</strong><br>George Orwell – Totaliter rejim eleştirisi ve bireyin özgürlüğü üzerine çarpıcı bir distopya.</p>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a class="btn-primary" href="https://1000kitap.com/Cezeri73/kitaplari/okuduklari" target="_blank">
+      View My Books on 1000Kitap
+    </a>
+  </div>
+</div>
+
+<div id="quotes" class="tab-content">
+      <div class="media-card">
+        <img src="images/quote1.jpg" alt="Quote Image">
+        <p>“Design is not just what it looks like. Design is how it works.” — Steve Jobs</p>
       </div>
-    </section>
+    </div>
   </main>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(btn => btn.classList.remove('active'));
+        tab.classList.add('active');
+
+        contents.forEach(content => content.classList.remove('active'));
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  // Arka plan değiştirme
+const backgrounds = {
+  travel: 'url(https://images.unsplash.com/photo-1645969725362-3353993c9fe1?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+  music: 'url(https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1920&q=80)',
+  books: 'url(https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1920&q=80)',
+  quotes: 'url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1920&q=80)'
+};
+
+function updateBackground(tabId) {
+  document.body.style.backgroundImage = backgrounds[tabId] || 'none';
+  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundPosition = 'center';
+  document.body.style.transition = 'background 0.5s ease-in-out';
+}
+
+// tab değiştirme + arka plan güncelleme
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(btn => btn.classList.remove('active'));
+    tab.classList.add('active');
+
+    contents.forEach(content => content.classList.remove('active'));
+    document.getElementById(tab.dataset.tab).classList.add('active');
+
+    updateBackground(tab.dataset.tab);
+  });
+});
+</script>
 </body>
 </html>

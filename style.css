@@ -561,3 +561,97 @@
     font-size: 0.95rem;
     color: #555;
   }
+  #bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  .timeline-event {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .timeline-event:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+  }.timeline-event h4 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }.skill-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  }
+  
+  .tabs {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4F8FC0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .tab-btn:hover,
+  .tab-btn.active {
+    background-color: #3b6e95;
+  }
+  .tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  .tab-content.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .media-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  .media-card:hover {
+    transform: scale(1.03);
+  }
+  .media-card img,
+  .media-card video {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .media-card p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

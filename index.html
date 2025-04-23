@@ -20,7 +20,21 @@
         </ul>
       </nav>
   </header>
-
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/backgrounddd.mp4" type="video/mp4">
+  </video>
+  <style>
+    #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.6;
+}
+  </style>
   <main class="container">
     <section class="hero">
       <div class="hero-text">
