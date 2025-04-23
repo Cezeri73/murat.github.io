@@ -1,4 +1,3 @@
-/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -80,12 +79,12 @@
     color: #4F8FC0;
     margin-bottom: 1rem;
   }
-  
   .hero-text p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
   
+/* Reset */
   .hero-image {
     flex: 1 1 250px;
     display: flex;
@@ -185,6 +184,7 @@
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 1.5rem;
+  
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
   }
@@ -655,3 +655,22 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
   }
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3; /* Arka plan etkisi için saydamlık */
+}
+
+/* Sayfadaki içeriğin üstte görünmesini sağlar */
+main.container,
+.about-section,
+.timeline,
+.about-grid {
+  position: relative;
+  z-index: 1;
+}
