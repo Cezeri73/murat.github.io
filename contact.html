@@ -1,64 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background-color: #2a2a2a;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .contact-section h2 {
+      color: #FF6B35;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .contact-section p {
+      font-size: 1rem;
+      color: #dddddd;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .contact-section ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .contact-section li {
+      font-size: 1rem;
+    }
+
+    .contact-section a {
+      color: #ffa74f;
+      text-decoration: none;
+    }
+
+    .contact-section a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 6px;
+      background-color: #1a1a1a;
+      color: #eee;
+    }
+
+    .contact-section button {
+      padding: 0.6rem 1.2rem;
+      background: #FF6B35;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    header nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    header h1 {
+      color: white;
+      font-size: 1.4rem;
+    }
+
+    header p {
+      font-size: 0.8rem;
+      color: #bbb;
+      margin-top: 4px;
+    }
+  </style>
 </head>
 <body>
-  <style>
-     body {
-    background: url("images/background.jpg") no-repeat center center fixed;
-    background-size: cover;
-
-  }
-
-form {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  }
-  </style>
   <header>
     <nav>
-      <h1>Murat Kaynar -Computer Engineering Student</h1>
+      <h1>Murat Kaynar <p>Computer Engineer</p></h1>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
-        <li><a href="myworld.html">MyWorld</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="contact-section">
-    <h2 style="text-align: center; margin-top: 50px; margin-bottom: 50px; font-size: 36px;">Contact Me</h2>
+    <h2>Contact Me</h2>
+    <p>Reach out via form or connect on social media.</p>
+
     <form action="https://formspree.io/f/xldbegzn" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-    <div class="social-links">
-     
+    <ul>
+      <li><a href="https://github.com/Cezeri73" target="_blank">🐙 GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/murat-kaynar-589b1422b/" target="_blank">💼 LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/elcezeri/" target="_blank">📸 Instagram</a></li>
+    </ul>
 
-      <a href="https://github.com/Cezeri73" target="_blank">🐙 GitHub</a>
-      <a href="https://www.linkedin.com/in/murat-kaynar-589b1422b/" target="_blank">💼 LinkedIn</a>
-      <a href="https://www.instagram.com/elcezeri/" target="_blank">📸 Instagram</a>
-    </div>
-     <p>Total Visits: <span id="visit-counter">loading...</span></p>
+    <p style="text-align: center;">Total Visits: <span id="visit-counter">loading...</span></p>
   </section>
+
+  <script>
+    // Örnek ziyaretçi sayacı (Firebase veya localStorage ile entegre edilebilir)
+    document.addEventListener("DOMContentLoaded", () => {
+      const visitElement = document.getElementById("visit-counter");
+      // Bu kısmı backend sayaca bağlayarak dinamik yapabilirsin
+      visitElement.innerText = Math.floor(Math.random() * 1000 + 100); // demo amaçlı rastgele
+    });
+  </script>
 </body>
 </html>
-<script>
-  fetch('https://api.countapi.xyz/hit/muratkaynar.github.io/visits')
-  .then(res => res.json())
-  .then(data => {
-    document.getElementById('visit-counter').innerText = data.value;
-  });
-</script>
