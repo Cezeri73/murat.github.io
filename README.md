@@ -1,51 +1,47 @@
-# 🌐 Murat's Digital E-Portfolio
+# 🧑‍💻 Murat Kaynar – Personal Portfolio
 
-This is a **responsive and interactive e-portfolio website** built using HTML, CSS, and JavaScript.  
-Hosted on GitHub Pages: [🔗 Visit Site](https://cezeri73.github.io/murat.github.io/)
+Welcome to my personal developer portfolio website!  
+This site showcases my background, projects, skills, certifications, and contact information.  
+It was built and deployed using GitHub Pages.
 
----
-
-## ✨ Features
-
-- 🔄 Dynamic tab-based interface (`MyWorld` section with Travel, Music, Books, Quotes)
-- 🎥 Video background support (auto-loop, muted, responsive)
-- 📷 Click-to-enlarge image gallery (modal support)
-- 🔢 Visitor counter (powered by CountAPI)
-- 📱 Fully mobile responsive
-- 📚 Books linked to [1000kitap](https://1000kitap.com/Cezeri73/kitaplari/okuduklari)
-- 🎶 Embedded YouTube & Google Drive videos
+🌐 **Live Website**  
+👉 [Visit murat.github.io](https://cezeri73.github.io/murat.github.io/)
 
 ---
 
 ## 🔧 Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Git & GitHub Pages
-- [CountAPI](https://countapi.xyz) for visit tracking
+- HTML5 & CSS3  
+- JavaScript (vanilla)  
+- GitHub Pages (static hosting)  
+- Formspree (contact form handler)  
+- Responsive layout & dark theme design  
 
 ---
 
-## 📁 Folder Structure
+## 📂 Pages Included
 
-/images/ → static images /videos/ → background and media videos /index.html → homepage /about.html → about me page /projects.html → project showcase /skills.html → skillset and tools /myworld.html → personal gallery + videos /contact.html → contact form & social links
-
-yaml
-Kopyala
-Düzenle
+- `index.html` – Home page with a custom hero section  
+- `about.html` – Timeline, education, and personal background  
+- `projects.html` – List of featured projects with tech stacks  
+- `skills.html` – Categorized technical skills and certifications  
+- `contact.html` – Formspree-enabled contact form + social links  
 
 ---
 
-## 🚀 Run Locally
+## 📸 Preview
 
-```bash
-git clone https://github.com/Cezeri73/murat.github.io.git
-cd murat.github.io
-# Open index.html in browser
-📬 Contact
-GitHub: @Cezeri73
+![screenshot](https://user-images.githubusercontent.com/your-image-path.png)  
+*(Optional: Add a screenshot of the homepage here)*
 
-LinkedIn: Murat Kaynar
+---
 
-Instagram: @elcezeri
+## 👨‍💼 Author
+
+**Murat Kaynar**  
+[LinkedIn](https://www.linkedin.com/in/murat-kaynar-589b1422b/)  
+[GitHub](https://github.com/Cezeri73)
+
+---
+
+### 📬 Feel free to connect or contribute feedback!
