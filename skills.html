@@ -6,16 +6,18 @@
   <title>Skills</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body style="background-color: #1a1a1a; color: #e0e0e0;">
+<body>
   <header>
     <nav>
-      <h1 style="color: #fff;">Murat Kaynar <p style="color: #bbb; font-size: 0.85rem;">Computer Engineer</p></h1>
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h1 style="color: var(--text-primary); margin-bottom: 0;">Murat Kaynar</h1>
+        <p class="subtitle" style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 2px;">Computer Engineer</p>
+      </div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
- 
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -24,132 +26,130 @@
   <main class="container">
     <h2 style="text-align: center; margin: 2rem auto;">Technical Skills</h2>
 
-    <div class="gradient-border">
-      <div class="project-card">
-        <h3>💻 Programming Languages</h3>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">💻</div>
+        <h3>Programming Languages</h3>
         <ul>
-          <li>Python ★★★★☆</li>
-          <li>C++ ★★★★☆</li>
-          <li>Java ★★★☆☆</li>
-          <li>C ★★★☆☆</li>
+          <li>Python <span class="stars">★★★★☆</span></li>
+          <li>C++ <span class="stars">★★★★☆</span></li>
+          <li>Java <span class="stars">★★★☆☆</span></li>
+          <li>C <span class="stars">★★★☆☆</span></li>
         </ul>
       </div>
-    </div>
-
-    <div class="gradient-border">
-      <div class="project-card">
-        <h3>🎨 Frontend Technologies</h3>
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>Frontend Technologies</h3>
         <ul>
-          <li>HTML5 ★★★★★</li>
-          <li>CSS3 ★★★★☆</li>
-          <li>JavaScript ★★★★☆</li>
-          <li>Vue.js ★★★☆☆</li>
+          <li>HTML5 <span class="stars">★★★★★</span></li>
+          <li>CSS3 <span class="stars">★★★★☆</span></li>
+          <li>JavaScript <span class="stars">★★★★☆</span></li>
+          <li>Vue.js <span class="stars">★★★☆☆</span></li>
         </ul>
       </div>
-    </div>
-
-    <div class="gradient-border">
-      <div class="project-card">
-        <h3>🧩 Backend / API Development</h3>
+      <div class="skill-card">
+        <div class="skill-icon">🧩</div>
+        <h3>Backend / API Development</h3>
         <ul>
-          <li>Flask ★★★★☆</li>
-          <li>FastAPI ★★★☆☆</li>
+          <li>Flask <span class="stars">★★★★☆</span></li>
+          <li>FastAPI <span class="stars">★★★☆☆</span></li>
         </ul>
       </div>
-    </div>
-
-    <div class="gradient-border">
-      <div class="project-card">
-        <h3>🗄️ Databases & Tools</h3>
+      <div class="skill-card">
+        <div class="skill-icon">🗄️</div>
+        <h3>Databases & Tools</h3>
         <ul>
-          <li>PostgreSQL ★★★★☆</li>
-          <li>SQL ★★★☆☆</li>
-          <li>pgAdmin ★★★☆☆</li>
+          <li>PostgreSQL <span class="stars">★★★★☆</span></li>
+          <li>SQL <span class="stars">★★★☆☆</span></li>
+          <li>pgAdmin <span class="stars">★★★☆☆</span></li>
         </ul>
       </div>
-    </div>
-
-    <div class="gradient-border">
-      <div class="project-card">
-        <h3>☁️ DevOps & Cloud</h3>
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <h3>DevOps & Cloud</h3>
         <ul>
-          <li>Docker ★★★★☆</li>
-          <li>Kubernetes ★★☆☆☆</li>
-          <li>Linux CLI ★★★★☆</li>
-          <li>Bash ★★★☆☆</li>
+          <li>Docker <span class="stars">★★★★☆</span></li>
+          <li>Kubernetes <span class="stars">★★☆☆☆</span></li>
+          <li>Linux CLI <span class="stars">★★★★☆</span></li>
+          <li>Bash <span class="stars">★★★☆☆</span></li>
         </ul>
       </div>
-    </div>
-
-    <div class="gradient-border">
-      <div class="project-card">
-        <h3>🔧 Version Control</h3>
+      <div class="skill-card">
+        <div class="skill-icon">🔧</div>
+        <h3>Version Control</h3>
         <ul>
-          <li>Git ★★★★☆</li>
-          <li>GitHub ★★★★★</li>
+          <li>Git <span class="stars">★★★★☆</span></li>
+          <li>GitHub <span class="stars">★★★★★</span></li>
         </ul>
       </div>
     </div>
 
     <h2 style="text-align: center; margin: 2rem auto;">📜 Certifications</h2>
-
-    <div class="gradient-border">
-      <div class="project-card">
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>🛠 Huawei Cloud DevOps Bootcamp</strong><br/>
-          <small>12-week hands-on program focused on CI/CD, Docker, Kubernetes and DevOps culture. Hosted by Huawei Cloud Turkey.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>🧠 Agile Development Day 2024</strong><br/>
-          <small>Agile methodologies, team collaboration, sprint planning – organized by Coderspace.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>📊 Product Management Day</strong><br/>
-          <small>Product ownership, MVP, and roadmap strategies – Coderspace workshop event.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>☁️ Cloud DevOps Day</strong><br/>
-          <small>DevOps culture, cloud tooling, and automation pipelines overview.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>💻 Backend with Java</strong><br/>
-          <small>Java fundamentals, OOP, and backend development – by Patika.dev.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>🖥️ C Programming</strong><br/>
-          <small>Core C programming logic and memory operations – with Patika.dev & Akademi.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>📈 Microsoft Excel</strong><br/>
-          <small>Excel essentials including formulas, pivot tables – by ThinkTech Academy.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>🧩 Operating Systems</strong><br/>
-          <small>OS architecture, scheduling, memory & file systems – academic training.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>📦 Docker Essentials</strong><br/>
-          <small>Containerization fundamentals, images, Docker CLI – by Patika.dev.</small>
-        </div>
-    
-        <div style="margin-bottom: 1.2rem;">
-          <strong>☁️ Cloud Fundamentals</strong><br/>
-          <small>Introductory level cloud computing and deployment concepts.</small>
-        </div>
-    
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🛠</div>
+        <h3>Huawei Cloud DevOps Bootcamp</h3>
+        <p>12-week hands-on program focused on CI/CD, Docker, Kubernetes and DevOps culture. Hosted by Huawei Cloud Turkey.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🧠</div>
+        <h3>Agile Development Day 2024</h3>
+        <p>Agile methodologies, team collaboration, sprint planning – organized by Coderspace.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <h3>Product Management Day</h3>
+        <p>Product ownership, MVP, and roadmap strategies – Coderspace workshop event.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <h3>Cloud DevOps Day</h3>
+        <p>DevOps culture, cloud tooling, and automation pipelines overview.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">💻</div>
+        <h3>Backend with Java</h3>
+        <p>Java fundamentals, OOP, and backend development – by Patika.dev.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🖥️</div>
+        <h3>C Programming</h3>
+        <p>Core C programming logic and memory operations – with Patika.dev & Akademi.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📈</div>
+        <h3>Microsoft Excel</h3>
+        <p>Excel essentials including formulas, pivot tables – by ThinkTech Academy.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🧩</div>
+        <h3>Operating Systems</h3>
+        <p>OS architecture, scheduling, memory & file systems – academic training.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📦</div>
+        <h3>Docker Essentials</h3>
+        <p>Containerization fundamentals, images, Docker CLI – by Patika.dev.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">☁️</div>
+        <h3>Cloud Fundamentals</h3>
+        <p>Introductory level cloud computing and deployment concepts.</p>
       </div>
     </div>
-    
-    
   </main>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="https://github.com/Cezeri73" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/murat-kaynar-589b1422b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/elcezeri/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-text">
+        <span>&copy; 2024 Murat Kaynar. All rights reserved.</span>
+        <span class="footer-designer">Designed by Murat Kaynar</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

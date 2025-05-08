@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Murat | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body style="background-color: #000; color: #fff;">
+<body class="dark-theme">
   <header>
     <nav class="nav-highlight">
-      <h1 style="color: #fff;">Murat Kaynar <p>Computer Engineer</p></h1>
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h1 style="color: var(--text-primary); margin-bottom: 0;">Murat Kaynar</h1>
+        <p class="subtitle" style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 2px;">Computer Engineer</p>
+      </div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
-       
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -24,17 +27,116 @@
   <main class="container">
     <section class="hero">
       <div class="hero-text">
-        <h2>Welcome to My Professional Journey</h2>
-        <p>
-          I’m excited to share more than just code—this space is a reflection of who I am as a thinker, maker, and lifelong learner.
-          Feel free to explore my work, my mindset, and what drives me. Let’s connect and grow together.
+        <div class="hero-badge">👋 Welcome to My Portfolio</div>
+        <h2>Turning Ideas into <span class="highlight">Digital Reality</span></h2>
+        <p class="hero-description">
+          I'm a Computer Engineering student passionate about creating impactful solutions through code.
+          Specializing in DevOps, backend systems, and modern software development.
         </p>
-        <a href="assets/MuratKaynar-CV-V1.pdf" download class="btn">📄 Download CV</a>
+        <div class="hero-cta">
+          <a href="assets/MuratKaynar-CV-V1.pdf" download class="btn primary">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="contact.html" class="btn secondary">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
       </div>
       <div class="hero-image">
-        <img src="images/your-photo.jpg" alt="Murat's Photo">
+        <div class="image-container">
+          <img src="images/your-photo.jpg" alt="Murat's Photo">
+          <div class="image-decoration"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <div class="quick-link-card">
+        <div class="card-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Projects</h3>
+        <p>Explore my latest work and technical solutions</p>
+        <a href="projects.html" class="card-link">View Projects <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="quick-link-card">
+        <div class="card-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3>Skills</h3>
+        <p>Check out my technical expertise and tools</p>
+        <a href="skills.html" class="card-link">View Skills <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="quick-link-card">
+        <div class="card-icon">
+          <i class="fas fa-user"></i>
+        </div>
+        <h3>About Me</h3>
+        <p>Learn more about my journey and experience</p>
+        <a href="about.html" class="card-link">About Me <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="featured-projects">
+      <h2>Featured Projects</h2>
+      <div class="featured-grid">
+        <div class="featured-card">
+          <div class="featured-image">
+            <img src="images/s4.JPG" alt="Project 1">
+          </div>
+          <div class="featured-content">
+            <h3>Smart Home Automation</h3>
+            <p>IoT-based home automation system with voice control</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>IoT</span>
+              <span>Raspberry Pi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-image">
+            <img src="images/omr-ocr.JPG" alt="Project 2">
+          </div>
+          <div class="featured-content">
+            <h3>OCR/OMR System</h3>
+            <p>Automated document processing and form recognition</p>
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>ML</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="https://github.com/Cezeri73" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/murat-kaynar-589b1422b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/elcezeri/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-text">
+        <span>&copy; 2024 Murat Kaynar. All rights reserved.</span>
+        <span class="footer-designer">Designed by Murat Kaynar</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

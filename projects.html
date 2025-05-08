@@ -1,4 +1,3 @@
-<!-- projects.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,81 +5,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects</title>
   <link rel="stylesheet" href="style.css">
-  
 </head>
-<body>
+<body class="dark-theme">
   <header>
     <nav class="nav-highlight">
-      <h1>Murat Kaynar <p>Computer Engineer</p></h1>
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h1 style="color: var(--text-primary); margin-bottom: 0;">Murat Kaynar</h1>
+        <p class="subtitle" style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 2px;">Computer Engineer</p>
+      </div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="skills.html">Skills</a></li>
-       
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-  
+
   <main class="container">
     <section class="projects">
       <h1>Projects</h1>
-      <div class="project-grid">
-
-        <div class="gradient-border">
-          <div class="project-card">
-            <h3>KALPLERE ULAŞ – Web Site</h3>
-            <p>A charity organization website developed with HTML, CSS and JavaScript. It offers a user-friendly interface, event promotion and donation opportunities.</p>
-            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
-            <a href="https://cezeri73.github.io/CENG311-WEBPROJECT-Sprint4/index.html" target="_blank">Visit Website</a> <br>
-            <a href="https://github.com/cezeri73/ceng311-webproject" target="_blank">View on GitHub</a>
-            
-          </div>
-        </div>
-
-        <div class="gradient-border">
-          <div class="project-card">
-            <h3>OMR-OCR Grading System</h3>
-            <p>Web-based optical form evaluation system. Processes student answers and information with OMR/OCR technologies and stores them in a PostgreSQL database..</p>
-            <p><strong>Technologies:</strong> Python, Flask, FastAPI, PostgreSQL</p>
-            <a href="https://github.com/nazifebutun/examgradingsystem/tree/murat" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-
-        <div class="gradient-border">
-          <div class="project-card">
-            <h3>YouTube UI (Vue.js)</h3>
-            <p>A simple video listing app with YouTube-like interface built using Vue.js.</p>
-            <p><strong>Technologies:</strong> Vue.js, HTML, CSS</p>
-            <a href="https://github.com/cezeri73/vueprojects/tree/main/youtubeprojesi/youtube" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-        <div class="gradient-border">
-          <div class="project-card">
-            <h3>Digital E-Portfolio Website</h3>
-            <p>
-              This is my personal website developed as a final-year computer engineering student. It presents my academic background, skills, and achievements using a responsive and modular design.
-            </p>
-            <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, GitHub Pages, Git</p>
-            <a href="https://cezeri73.github.io/murat.github.io/" target="_blank">Visit Website</a> <br>
-            <a href="https://github.com/Cezeri73/murat.github.io" target="_blank" >View on GitHub</a>
-          </div>
-        </div>
-        
-        <div class="gradient-border">
-          <div class="project-card">
-            <h3>Smart Home Automation System</h3>
-            <p>It is a smart home system developed with C++. Lights, cameras and thermostats can be controlled remotely. Observer and Factory patterns are used.
-            </p>
-            <p><strong>Technologies:</strong> C++, Design Patterns (Observer, Factory)</p>
-            <a href="https://github.com/cezeri73/oop-group9" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-
+      
+<div class="project-grid">
+  <div class="project-card">
+    <div class="project-image">
+      <img src="images/s1.JPG" alt="KALPLERE ULAŞ – Web Site" />
+    </div>
+    <div class="project-content">
+      <h3>KALPLERE ULAŞ – Web Site</h3>
+      <p>A charity organization website developed with HTML, CSS and JavaScript. It offers a user-friendly interface, event promotion and donation opportunities.</p>
+      <div class="tech-badges">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
       </div>
-    </section>
-  </main>   
+      <div class="button-container">
+        <a href="#" class="btn">Visit Website</a>
+        <a href="#" class="btn github">View on GitHub</a>
+      </div>
+    </div>
+  </div>
 
+  <div class="project-card">
+    <div class="project-image">
+      <img src="images/omr-ocr.jpg" alt="OMR-OCR Grading System" />
+    </div>
+    <div class="project-content">
+      <h3>OMR-OCR Grading System</h3>
+      <p>Web-based optical form evaluation system. Processes student answers and information with OMR/OCR technologies and stores them in a PostgreSQL database.</p>
+      <div class="tech-badges">
+        <span>Python</span><span>Flask</span><span>FastAPI</span><span>PostgreSQL</span>
+      </div>
+      <div class="button-container">
+        <a href="#" class="btn github">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-image">
+      <img src="images/day20-4.PNG" alt="YouTube UI (Vue.js)" />
+    </div>
+    <div class="project-content">
+      <h3>YouTube UI (Vue.js)</h3>
+      <p>A simple video listing app with YouTube-like interface built using Vue.js.</p>
+      <div class="tech-badges">
+        <span>Vue.js</span><span>HTML</span><span>CSS</span>
+      </div>
+      <div class="button-container">
+        <a href="#" class="btn github">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-image">
+      <img src="images/s3.JPG" alt="Digital E-Portfolio Website" />
+    </div>
+    <div class="project-content">
+      <h3>Digital E-Portfolio Website</h3>
+      <p>This is my personal website developed as a final-year computer engineering student. It presents my academic background, skills, and achievements using a responsive and modular design.</p>
+      <div class="tech-badges">
+        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GitHub Pages</span><span>Git</span>
+      </div>
+      <div class="button-container">
+        <a href="#" class="btn">Visit Website</a>
+        <a href="#" class="btn github">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-image">
+      <img src="images/s4.JPG" alt="Smart Home Automation System" />
+    </div>
+    <div class="project-content">
+      <h3>Smart Home Automation System</h3>
+      <p>It is a smart home system developed with C++. Lights, cameras and thermostats can be controlled remotely. Observer and Factory patterns are used.</p>
+      <div class="tech-badges">
+        <span>C++</span><span>Design Patterns</span>
+      </div>
+      <div class="button-container">
+        <a href="#" class="btn github">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+  </main>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-social">
+      <a href="https://github.com/Cezeri73" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/murat-kaynar-589b1422b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/elcezeri/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="footer-text">
+      <span>&copy; 2024 Murat Kaynar. All rights reserved.</span>
+      <span class="footer-designer">Designed by Murat Kaynar</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
