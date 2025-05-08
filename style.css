@@ -1203,3 +1203,75 @@ pre, code {
     font-size: 1.2rem;
   }
 }
+
+/* --- Mobil Navigasyon (Hamburger Menü) --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background: var(--primary);
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: var(--bg-card);
+    width: 100vw;
+    box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    padding: 1.5rem 0;
+    gap: 0;
+  }
+  nav ul.open {
+    display: flex;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Grid ve Kartlar için Mobil Optimizasyon */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 0.3rem;
+  }
+  .project-card, .skill-card, .about-card {
+    padding: 1rem 0.5rem;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .project-image img, .featured-image img, .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  .project-grid, .skills-grid, .about-grid, .achievements-grid {
+    gap: 1rem;
+  }
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
+  p, li, .btn {
+    font-size: 1rem;
+  }
+}

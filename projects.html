@@ -13,7 +13,12 @@
         <h1 style="color: var(--text-primary); margin-bottom: 0;">Murat Kaynar</h1>
         <p class="subtitle" style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 2px;">Computer Engineer</p>
       </div>
-      <ul>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="projects.html">Projects</a></li>
@@ -121,10 +126,18 @@
       <a href="https://www.instagram.com/elcezeri/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="footer-text">
-      <span>&copy; 2024 Murat Kaynar. All rights reserved.</span>
+      <span>&copy; 2025 Murat Kaynar. All rights reserved.</span>
       <span class="footer-designer">Designed by Murat Kaynar</span>
     </div>
   </div>
 </footer>
+<script>
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger-menu');
+  const navList = document.getElementById('nav-list');
+  hamburger.addEventListener('click', () => {
+    navList.classList.toggle('open');
+  });
+</script>
 </body>
 </html>
