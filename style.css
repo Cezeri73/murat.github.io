@@ -39,12 +39,16 @@ body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
   line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 header {
@@ -662,10 +666,12 @@ nav ul li a:hover {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
+    padding: 2rem 1rem;
   }
 
   .hero-text {
     max-width: 100%;
+    padding: 0 1rem;
   }
 
   .hero-cta {
@@ -678,21 +684,62 @@ nav ul li a:hover {
 
   .image-container {
     max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .quick-links {
+    padding: 0 1rem;
+  }
+
+  .featured-projects {
+    padding: 0 1rem;
   }
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
   .hero h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .hero-cta {
     flex-direction: column;
+    padding: 0 1rem;
   }
 
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .project-card, .skill-card, .about-card {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .project-grid, .skills-grid, .about-grid, .achievements-grid {
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .featured-grid {
+    padding: 0 0.5rem;
+  }
+
+  .contact-section {
+    padding: 1rem;
+    margin: 2rem 0.5rem;
+  }
+
+  nav {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer-content {
+    padding: 0 0.5rem;
   }
 }
 
@@ -1247,31 +1294,5 @@ pre, code {
   }
   .hamburger {
     display: flex;
-  }
-}
-
-/* Grid ve Kartlar için Mobil Optimizasyon */
-@media (max-width: 600px) {
-  .container {
-    padding: 0 0.3rem;
-  }
-  .project-card, .skill-card, .about-card {
-    padding: 1rem 0.5rem;
-    min-width: 0;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .project-image img, .featured-image img, .image-container img {
-    max-width: 100%;
-    height: auto;
-  }
-  .project-grid, .skills-grid, .about-grid, .achievements-grid {
-    gap: 1rem;
-  }
-  h1, h2, h3 {
-    font-size: 1.2rem;
-  }
-  p, li, .btn {
-    font-size: 1rem;
   }
 }
