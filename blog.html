@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WPE4N7DVJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-5WPE4N7DVJ');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Read technical articles and insights about software development, DevOps, and computer engineering from Murat Kaynar." />
+  <meta name="keywords" content="Murat Kaynar, Blog, Software Development, DevOps, Computer Engineering, Technical Articles" />
+  <meta name="author" content="Murat Kaynar" />
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://muratkaynar.github.io/blog.html" />
+  <meta property="og:title" content="Blog | Murat Kaynar - Technical Articles" />
+  <meta property="og:description" content="Technical articles about software development, DevOps, and computer engineering." />
+  <meta property="og:image" content="https://muratkaynar.github.io/images/your-photo.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://muratkaynar.github.io/blog.html" />
+  <meta property="twitter:title" content="Blog | Murat Kaynar - Technical Articles" />
+  <meta property="twitter:description" content="Technical articles about software development, DevOps, and computer engineering." />
+  <meta property="twitter:image" content="https://muratkaynar.github.io/images/your-photo.jpg" />
+
+  <title>Blog | Murat Kaynar - Technical Articles</title>
+  <link rel="canonical" href="https://muratkaynar.github.io/blog.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <h1 style="color: var(--text-primary); margin-bottom: 0;">Murat Kaynar</h1>
+        <p class="subtitle" style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 2px;">Computer Engineer</p>
+      </div>
+      <div class="hamburger" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Technical Blog</h1>
+    <div class="blog-grid">
+      <article class="blog-post">
+        <div class="blog-image">
+          <img src="images/devops.jpg" alt="DevOps Best Practices">
+        </div>
+        <div class="blog-content">
+          <h2>DevOps Best Practices for Modern Software Development</h2>
+          <div class="blog-meta">
+            <span class="date">March 19, 2024</span>
+            <span class="category">DevOps</span>
+          </div>
+          <p>Exploring the essential DevOps practices that every software developer should know, including CI/CD, containerization, and automation strategies.</p>
+          <a href="#" class="btn primary">Read More</a>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <div class="blog-image">
+          <img src="images/backend.jpg" alt="Backend Development">
+        </div>
+        <div class="blog-content">
+          <h2>Building Scalable Backend Systems with Python</h2>
+          <div class="blog-meta">
+            <span class="date">March 18, 2024</span>
+            <span class="category">Backend</span>
+          </div>
+          <p>A comprehensive guide to building robust and scalable backend systems using Python, FastAPI, and PostgreSQL.</p>
+          <a href="#" class="btn primary">Read More</a>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <div class="blog-image">
+          <img src="images/cloud.jpg" alt="Cloud Computing">
+        </div>
+        <div class="blog-content">
+          <h2>Cloud Computing Fundamentals for Developers</h2>
+          <div class="blog-meta">
+            <span class="date">March 17, 2024</span>
+            <span class="category">Cloud</span>
+          </div>
+          <p>Understanding the basics of cloud computing, including IaaS, PaaS, and SaaS models, and their practical applications.</p>
+          <a href="#" class="btn primary">Read More</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-social">
+        <a href="https://github.com/Cezeri73" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/murat-kaynar-589b1422b/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/elcezeri/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-text">
+        <span>&copy; 2025 Murat Kaynar. All rights reserved.</span>
+        <span class="footer-designer">Designed by Murat Kaynar</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger-menu');
+    const navList = document.getElementById('nav-list');
+    hamburger.addEventListener('click', () => {
+      navList.classList.toggle('open');
+    });
+  </script>
+</body>
+</html> 
